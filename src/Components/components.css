@@ -1,0 +1,110 @@
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0rem 1rem;
+    background-color: var(--header-bg);
+    color: var(--text);
+    box-shadow: 0 7px 10px rgba(0,0,0,0.1);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    transition: background-color 0s ease, color 0.9s ease;
+  }
+  body.light-theme {
+    --header-bg: #ffffff;
+    --bg: #ffffff;
+    --text: #121212;
+    --button-bg: #eaeaea;
+    --button-text: #121212;
+  }
+  
+  body.dark-theme {
+    --header-bg: #0B0B0B; /* pitch black */
+    --bg: #121212;         /* matte black background */
+    --text: #f1f1f1;
+    --button-bg: #000000;
+    --button-text: #f1f1f1;
+  }
+    
+  .logo-img {
+    height: 60px;
+    width: auto;
+    transition: filter 0s ease;
+    background-color: black;
+  }
+  
+  .dark-logo {
+    filter: invert(1) brightness(2);
+  
+  }
+  
+  
+  .theme-toggle {
+    padding: 0.3rem 1rem;
+    font-size: 1rem;
+    cursor: pointer;
+    border: none;
+    border-radius: 8px;
+    background-color: var(--button-bg);
+    color: var(--button-text);
+    transition: background-color 2s ease;
+  }
+
+  body.light-theme {
+    --bg: #ffffff;
+    --text: #121212;
+    --button-bg: #eaeaea;
+    --button-text: #121212;
+    background-color: var(--bg);
+    color: var(--text);
+  }
+  body {
+    transition: background-color 2s ease, color 2s ease;
+  }
+  body.dark-theme {
+    --bg: #1e1e1e;
+    --text: #f1f1f1;
+    --button-bg: #333333;
+    --button-text: #f1f1f1;
+    background-color: var(--bg);
+    color: var(--text);
+  }
+
+  .nav-menu {
+    display: flex;
+    gap: 1.5rem;
+    align-items: center;
+  }
+  
+  .nav-link {
+    font-weight: 500;
+    font-size: 1rem;
+    text-decoration: none;
+    color: var(--text);
+    transition: color 0.3s ease;
+    position: relative;
+  }
+  
+  .nav-link:hover {
+    color: #FD2155;
+  }
+  
+  /* Optional underline animation on hover */
+  .nav-link::after {
+    content: '';
+    position: absolute;
+    width: 0%;
+    height: 2px;
+    bottom: -4px;
+    left: 0;
+    background-color: #FD2155;
+    transition: width 0.3s ease;
+  }
+  
+  .nav-link:hover::after {
+    width: 100%;
+  }
+  
+  

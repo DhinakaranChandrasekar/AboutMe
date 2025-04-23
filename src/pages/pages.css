@@ -1,0 +1,223 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@500&display=swap');
+
+/* ---------- Shared Bouncy Letter Styles ---------- */
+.letter {
+  display: inline-block;
+  transition: transform 0.2s ease;
+  cursor: pointer;
+}
+
+.letter:hover {
+  animation: bounceHover 0.4s;
+}
+
+@keyframes bounceHover {
+  0% {
+    transform: translateY(0);
+  }
+  30% {
+    transform: translateY(-10px);
+  }
+  60% {
+    transform: translateY(5px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.highlight {
+  color: #FD2155;
+}
+
+/* ---------- Hero Section ---------- */
+.about-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 70vh;
+  padding: 2rem;
+  text-align: center;
+}
+
+.animated-line {
+  font-family: 'Fredoka', sans-serif;
+  font-size: 5rem;
+  font-weight: 500;
+  line-height: 1.4;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.15rem;
+  margin: 0.5rem 0;
+}
+
+/* ---------- About Me Section ---------- */
+.aboutme-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: 4rem 2rem;
+  gap: 3rem;
+  flex-wrap: wrap;
+}
+
+.aboutme-text {
+  flex: 1;
+  font-family: 'Fredoka', sans-serif;
+  font-size: 1.6rem;
+  line-height: 2;
+  max-width: 700px;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  color: var(--text);
+  text-align: left;
+}
+
+.word {
+  display: inline-block;
+  white-space: nowrap;
+  margin-right: 0.4ch;
+}
+
+.aboutme-coolstuff {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.cool-placeholder {
+  background-color: #f0f0f0;
+  color: #333;
+  font-size: 1rem;
+  padding: 2rem;
+  border-radius: 16px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+.ghibli-container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.ghibli-img {
+  height: 600px;
+  border-radius: 1rem;
+  object-fit: cover;
+}
+
+/* Terminal box above image */
+.terminal-box {
+  position: absolute;
+  top: 25px;
+  background-color: #000;
+  color: #FD2155;
+  font-family: 'Courier New', monospace;
+  font-size: 0.85rem;
+  padding: 1rem 1.2rem;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0,255,136,0.4);
+  min-width: 240px;
+  text-align: left;
+  left: 89px;
+  min-height: 150px;
+  z-index: 2;
+}
+
+.prompt {
+  color: #FD2155;
+}
+
+/* Resume page css */
+
+.resume-container {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  width: 100%;
+}
+
+.resume-frame {
+  width: 100%;
+  height: 100vh;
+  border: none;
+}
+
+/* Contact page css */
+.contact-container {
+  padding: 4rem 2rem;
+  text-align: center;
+  color: var(--text);
+}
+
+.contact-title {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.contact-subtext {
+  font-size: 1.2rem;
+  margin-bottom: 2.5rem;
+  opacity: 0.8;
+}
+
+.contact-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.contact-card {
+  background-color: var(--card-bg);
+  color: var(--text);
+  border-radius: 16px;
+  padding: 2rem;
+  width: 180px;
+  height: 160px;
+  text-decoration: none;
+  font-size: 1.1rem;
+  font-weight: 500;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 0 15px rgba(0,0,0,0.5);
+  transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease, color 0.3s ease;
+  cursor: pointer;
+}
+
+body.light-theme {
+  --bg: #ffffff;
+  --text: #121212;
+  --button-bg: #eaeaea;
+  --button-text: #121212;
+  --header-bg: #ffffff;
+  --card-bg: #ffffff; /* light theme card */
+}
+
+body.dark-theme {
+  --bg: #1e1e1e;
+  --text: #f1f1f1;
+  --button-bg: #333333;
+  --button-text: #f1f1f1;
+  --header-bg: #000000;
+  --card-bg: #1e1e1e; /* matte black card */
+}
+
+
+.contact-card:hover {
+  transform: translateY(-8px) scale(1.03);
+  box-shadow: 0 0 25px rgba(253, 33, 85, 0.3);
+}
+
+.contact-card .icon {
+  font-size: 2rem;
+  margin-bottom: 0.7rem;
+  color: #FD2155;
+}
