@@ -161,7 +161,7 @@
 /* Make it full-width on small screens */
 @media (max-width: 768px) {
   .resume-frame {
-    width: 100%;
+    width: 70%;
     height: 85vh;
   }
 }
