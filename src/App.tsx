@@ -9,7 +9,7 @@ import Contact from './pages/Contact';
 
 const App: React.FC = () => {
   return (
-    <BrowserRouter basename="/AboutMe">
+   
     <Router>
       <Header />
       <Routes>
@@ -20,7 +20,7 @@ const App: React.FC = () => {
         <Route path="/contact" element={<Contact/>} />
       </Routes>
     </Router>
-    </BrowserRouter>
+
   );
 };
 
