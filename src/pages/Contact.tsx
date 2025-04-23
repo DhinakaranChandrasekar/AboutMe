@@ -49,6 +49,7 @@ const PhoneIcon = FaPhone as unknown as React.FC<React.SVGProps<SVGSVGElement>>;
           <span>Email</span>
         </div>
 
+
         <div
           className="contact-card"
           onClick={() => handleCopy('Cant share sorry lol - try the email', 'Phone number')}
