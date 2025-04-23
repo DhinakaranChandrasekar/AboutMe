@@ -21,10 +21,10 @@ const Header: React.FC = () => {
 
       <nav className="nav-menu">
         <Link to="/AboutMe" className="nav-link">Home</Link>
-        <Link to="AboutMe/about" className="nav-link">About</Link>
+        <Link to="/AboutMe/about" className="nav-link">About</Link>
         {/* <Link to="/projects" className="nav-link">Projects</Link> */}
-        <Link to="AboutMe/resume" className="nav-link">Resume</Link>
-        <Link to="AboutMe/contact" className="nav-link">Contact</Link>
+        <Link to="/AboutMe/resume" className="nav-link">Resume</Link>
+        <Link to="/AboutMe/contact" className="nav-link">Contact</Link>
       </nav>
 
       <button 
