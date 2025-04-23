@@ -241,3 +241,24 @@ body.dark-theme {
   margin-bottom: 0.7rem;
   color: #FD2155;
 }
+.about-container {
+  min-height: 100vh;
+  padding: 0rem 0rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.section-block {
+  min-height: 100vh;
+  padding: 4rem 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Optional: add spacing between them if it feels too tight */
+.section-block:not(:first-child) {
+  margin-top: 4rem;
+}
