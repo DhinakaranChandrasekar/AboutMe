@@ -4,7 +4,7 @@ import './pages.css';
 const About: React.FC = () => {
   const lines = [
     {
-      text: "Hi, I'm DhinaKaran.",
+      text: "Hi, I'm DhinaKaran",
       highlightIndices: [8, 13] // D & K
     },
     {
