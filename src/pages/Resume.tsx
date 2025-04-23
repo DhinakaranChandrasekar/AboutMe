@@ -5,7 +5,7 @@ const Resume: React.FC = () => {
   const [zoom, setZoom] = useState(100);
 
   useEffect(() => {
-    const isMobile = window.innerWidth < 768;
+    const isMobile = window.innerWidth < 1000;
     setZoom(isMobile ? 70 : 100);
   }, []);
 
