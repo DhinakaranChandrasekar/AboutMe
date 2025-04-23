@@ -13,7 +13,7 @@ const Header: React.FC = () => {
     <header className="header">
       <div className="logo">
         <img 
-          src="/DK.png" 
+          src={`${process.env.PUBLIC_URL}/DK.png`} 
           alt="DK Logo" 
           className={`logo-img ${isDark ? '' : 'dark-logo'}`} 
         />
