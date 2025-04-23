@@ -53,6 +53,14 @@
   margin: 0.5rem 0;
 }
 
+
+@media (max-width: 768px) {
+  .animated-line {
+    font-size: 2.5rem;
+  }
+}
+
+
 /* ---------- About Me Section ---------- */
 .aboutme-container {
   display: flex;
@@ -143,9 +151,21 @@
 
 .resume-frame {
   width: 100%;
-  height: 100vh;
+  height: 90vh;
+  
   border: none;
+  border-radius: 8px;
+  box-shadow: 0 0 20px rgba(0,0,0,0.1);
 }
+
+/* Make it full-width on small screens */
+@media (max-width: 768px) {
+  .resume-frame {
+    width: 100%;
+    height: 85vh;
+  }
+}
+
 
 /* Contact page css */
 .contact-container {
