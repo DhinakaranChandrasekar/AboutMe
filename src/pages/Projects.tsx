@@ -14,7 +14,7 @@ const Projects = () => {
     <section style={{ padding: "2rem" }}>
       {/* Heading and filter buttons */}
       <div className="project-header">
-        <h1 className="text-4xl font-bold">My Projects</h1>
+        <h1 className="my-projects-heading">My Projects</h1>
         <div className="project-filter-buttons">
           {["all", "data", "web"].map((cat) => (
             <button

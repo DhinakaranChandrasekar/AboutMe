@@ -289,13 +289,15 @@ body.dark-theme {
   justify-content: center;
   padding-top: 50px;
 }
-
+.my-projects-heading{
+  font-size: 50px;
+}
 .project-image {
   width: 100%;
   height: auto;
   object-fit: cover;
   border-radius: 12px;
-  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.6);
 }
 
 .project-header {
