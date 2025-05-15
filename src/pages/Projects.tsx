@@ -39,6 +39,30 @@ const Projects = () => {
             <div className="project-text">
               <h2 className="text-2xl font-semibold mb-4">{project.title}</h2>
               <p className="text-gray-700 leading-relaxed">{project.description}</p>
+{/* Project links */}
+<div className="project-links mt-4">
+  {project.github && (
+    <a
+      href={project.github}
+      target="_blank"
+      rel="noopener noreferrer"
+      className="project-link-button"
+    >
+      GitHub
+    </a>
+  )}
+  {project.demo && (
+    <a
+      href={project.demo}
+      target="_blank"
+      rel="noopener noreferrer"
+      className="project-link-button"
+    >
+      Live Site
+    </a>
+  )}
+</div>
+
             </div>
             <div className="project-image-wrapper">
               <img

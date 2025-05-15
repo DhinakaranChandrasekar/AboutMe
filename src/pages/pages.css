@@ -342,3 +342,24 @@ body.dark-theme {
   background-color: #FD2155;
   color: #fff;
 }
+
+.project-links {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.project-link-button {
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  background-color: #1f2937;
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+  transition: background-color 0.2s ease;
+}
+
+.project-link-button:hover {
+  background-color: #111827;
+}
+
