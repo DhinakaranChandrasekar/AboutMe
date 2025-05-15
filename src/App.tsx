@@ -5,6 +5,7 @@ import About from './pages/About';
 import AboutMe from './pages/About-me';
 import Resume from './pages/Resume';
 import Contact from './pages/Contact';
+import Projects from './pages/Projects';
 // import other pages as you build them
 
 const App: React.FC = () => {
@@ -15,7 +16,7 @@ const App: React.FC = () => {
       <Routes>
         <Route path="/AboutMe/" element={<About />} />
         <Route path="/AboutMe/about" element={<AboutMe/>} />
-        {/* <Route path="/projects" element={<div>Projects</div>} /> */}
+        <Route path="/AboutMe/projects" element={<Projects/>} />
         <Route path="/AboutMe/resume" element={<Resume/>} />
         <Route path="/AboutMe/contact" element={<Contact/>} />
       </Routes>

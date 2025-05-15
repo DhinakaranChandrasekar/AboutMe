@@ -262,3 +262,83 @@ body.dark-theme {
 .section-block:not(:first-child) {
   margin-top: 4rem;
 }
+/*Projects css*/
+.project-container {
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+  padding-bottom: 50px;
+}
+
+@media (min-width: 768px) {
+  .project-container {
+    flex-direction: row;
+    align-items: flex-start;
+  }
+}
+
+.project-text {
+  width: 100%;
+  max-width: 900px;
+}
+
+.project-image-wrapper {
+  width: 100%;
+  max-width: 600px;
+  display: flex;
+  justify-content: center;
+  padding-top: 50px;
+}
+
+.project-image {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 12px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+}
+
+.project-header {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-bottom: 3rem;
+}
+
+@media (min-width: 768px) {
+  .project-header {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+.project-filter-buttons {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.filter-button {
+  padding: 0.5rem 1rem;
+  border-radius: 999px;
+  border: none;
+  background-color: #353535;
+  color: #ffffff;
+  font-weight: 500;
+  transition: all 0.2s ease;
+  cursor: pointer;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+
+.filter-button:hover {
+  background-color: #444445;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+
+.filter-button.active {
+  background-color: #FD2155;
+  color: #fff;
+}
