@@ -2,7 +2,7 @@
   "name": "my-portfolio",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://DhinakaranChandrasekar.github.io/AboutMe",
+  "homepage": "https://about-me-sooty-seven.vercel.app",
   "dependencies": {
     "@testing-library/dom": "^10.4.0",
     "@testing-library/jest-dom": "^6.6.3",
@@ -29,7 +29,6 @@
     "eject": "react-scripts eject",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build"
-
   },
   "eslintConfig": {
     "extends": [
@@ -52,5 +51,4 @@
   "devDependencies": {
     "@types/react-router-dom": "^5.3.3"
   }
-
 }
