@@ -1,10 +1,12 @@
 import React from 'react';
 import './pages.css';
+import AboutMe from './About-me';
+import Contact from './Contact';
 
 const About: React.FC = () => {
   const lines = [
     {
-      text: "Hi, I'm DhinaKaran.",
+      text: "Hi, I'm DhinaKaran",
       highlightIndices: [8, 13] // D & K
     },
     {
@@ -14,7 +16,8 @@ const About: React.FC = () => {
   ];
 
   return (
-    <div className="about-container">
+    <>
+   <section id="home" className="about-container">
       {lines.map((line, lineIndex) => (
         <h1 key={lineIndex} className="animated-line">
           {line.text.split('').map((char, charIndex) => {
@@ -30,7 +33,16 @@ const About: React.FC = () => {
           })}
         </h1>
       ))}
-    </div>
+   </section>
+   <section id="aboutme" className="section-block">
+  <AboutMe />
+</section>
+
+<section id="contact" className="section-block">
+  <Contact />
+</section>
+   
+    </>
   );
 };
 

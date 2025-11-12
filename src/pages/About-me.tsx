@@ -35,7 +35,7 @@ const AboutMe: React.FC = () => {
       <div className="aboutme-coolstuff">
   <div className="ghibli-container">
     <TerminalTyping />
-    <img src="/Ghibli.png" alt="Ghibli-style Me" className="ghibli-img" />
+    <img src={`${process.env.PUBLIC_URL}/Ghibli.png`} alt="Ghibli-style Me" className="ghibli-img" />
   </div>
 </div>
     </div>
